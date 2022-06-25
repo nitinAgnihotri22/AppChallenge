@@ -30,7 +30,7 @@ class MovieDetailVC: UIViewController {
     }
     
     func fetchMovieDetail() {
-        if appDel.isReachable {
+        if ConnectionManager.sharedInstance.isReachable {
             addLoader("Fetching Details",self)
             movieDetailVM.callFuncToGetMoviewDetail(getMovieDetailUrl(movieId)) { movieDetailObj, error in
                 hideLoader(self)

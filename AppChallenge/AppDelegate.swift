@@ -11,33 +11,10 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var isReachable = true
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        setupReachability()
+        ConnectionManager.sharedInstance.observeReachability()
         return true
-    }
-    
-    private func setupReachability() {
-        
-        // Allocate a reachability object
-        let reach = Reachability.forInternetConnection()
-        self.isReachable = reach!.isReachable()
-        
-        // Set the blocks
-        reach?.reachableBlock = { (reachability) in
-            
-            DispatchQueue.main.async(execute: {
-                self.isReachable = true
-            })
-        }
-        reach?.unreachableBlock = { (reachability) in
-            DispatchQueue.main.async(execute: {
-                self.isReachable = false
-            })
-        }
-        reach?.startNotifier()
     }
     
     // MARK: UISceneSession Lifecycle

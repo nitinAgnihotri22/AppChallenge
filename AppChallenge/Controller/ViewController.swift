@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     private func callApiToGetMovies(_ searchStr:String,page:Int) {
-        if appDel.isReachable {
+        if ConnectionManager.sharedInstance.isReachable {
             if searchStr.count > 0,
                page == self.pageNo {
                 addLoader("Fetching Movies",self)

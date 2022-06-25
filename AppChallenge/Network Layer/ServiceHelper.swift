@@ -32,7 +32,7 @@ class ServiceHelper: NSObject {
                        headers: [String: String]? = nil,
                        completionBlock: ((AnyObject?, Error?, Int) -> Void)?) {
         
-        if appDel.isReachable {
+        if ConnectionManager.sharedInstance.isReachable {
             var url: URL?
             var apiUrlNew = ""
             if let urll = apiURL {
