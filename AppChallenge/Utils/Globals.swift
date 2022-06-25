@@ -44,28 +44,6 @@ struct ProgressDialog {
     }
 }
 
-//_ item: @autoclosure () -> Any
-func addLoader(_ item: String? = "",
-               _ viewController: UIViewController? = nil) {
-    DispatchQueue.main.async {
-        if let viewController = viewController {
-            MBProgressHUD.hide(for: viewController.view, animated: true)
-            let hud = MBProgressHUD.showAdded(to: viewController.view, animated: true)
-            if let text = item {
-                hud.label.text = text
-            }
-        }
-    }
-}
-
-func hideLoader(_ viewController: UIViewController? = nil) {
-    DispatchQueue.main.async {
-        if let viewController = viewController {
-            MBProgressHUD.hide(for: viewController.view, animated: true)
-        }
-    }
-}
-
 struct Sort {
     static let ascending = 0
     static let descending = 1

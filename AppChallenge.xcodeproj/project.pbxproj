@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2543392C286728FA0074B5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2543392A286728FA0074B5BC /* LaunchScreen.storyboard */; };
-		2543396F286729290074B5BC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 25433953286729290074B5BC /* MBProgressHUD.m */; };
 		25433970286729290074B5BC /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25433956286729290074B5BC /* ServiceHelper.swift */; };
 		25433971286729290074B5BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25433957286729290074B5BC /* SceneDelegate.swift */; };
 		25433972286729290074B5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25433958286729290074B5BC /* AppDelegate.swift */; };
@@ -29,9 +28,9 @@
 		254339812867292A0074B5BC /* MovieDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2543396D286729290074B5BC /* MovieDetailTableCell.swift */; };
 		25433983286729420074B5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25433982286729420074B5BC /* Main.storyboard */; };
 		254339852867294E0074B5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254339842867294E0074B5BC /* Assets.xcassets */; };
-		B2BF8248286792E10062CA4D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF8247286792E10062CA4D /* File.swift */; };
 		B2BF824A286793980062CA4D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF8249286793980062CA4D /* Reachability.swift */; };
 		B2BF824C286793F90062CA4D /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF824B286793F90062CA4D /* ConnectionManager.swift */; };
+		B2E7F71128679ED500171A7E /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7F71028679ED500171A7E /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +38,6 @@
 		2543392B286728FA0074B5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2543392D286728FA0074B5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2543394F286729290074B5BC /* AppChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
-		25433953286729290074B5BC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		25433954286729290074B5BC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		25433956286729290074B5BC /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
 		25433957286729290074B5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		25433958286729290074B5BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +58,9 @@
 		2543396D286729290074B5BC /* MovieDetailTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailTableCell.swift; sourceTree = "<group>"; };
 		25433982286729420074B5BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		254339842867294E0074B5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2BF8247286792E10062CA4D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		B2BF8249286793980062CA4D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B2BF824B286793F90062CA4D /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		B2E7F71028679ED500171A7E /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +123,7 @@
 			children = (
 				B2BF8249286793980062CA4D /* Reachability.swift */,
 				B2BF824B286793F90062CA4D /* ConnectionManager.swift */,
-				25433953286729290074B5BC /* MBProgressHUD.m */,
-				25433954286729290074B5BC /* MBProgressHUD.h */,
-				B2BF8247286792E10062CA4D /* File.swift */,
+				B2E7F71028679ED500171A7E /* SpinnerViewController.swift */,
 			);
 			path = "Loader+Reachability";
 			sourceTree = "<group>";
@@ -265,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2543397A2867292A0074B5BC /* AlertController.swift in Sources */,
-				2543396F286729290074B5BC /* MBProgressHUD.m in Sources */,
 				25433973286729290074B5BC /* MoviesList.swift in Sources */,
 				254339812867292A0074B5BC /* MovieDetailTableCell.swift in Sources */,
 				2543397F2867292A0074B5BC /* MovieDetailVC.swift in Sources */,
@@ -280,7 +274,7 @@
 				254339802867292A0074B5BC /* MovieCollectionViewCell.swift in Sources */,
 				25433972286729290074B5BC /* AppDelegate.swift in Sources */,
 				254339782867292A0074B5BC /* MovieDetailVM.swift in Sources */,
-				B2BF8248286792E10062CA4D /* File.swift in Sources */,
+				B2E7F71128679ED500171A7E /* SpinnerViewController.swift in Sources */,
 				254339762867292A0074B5BC /* Rating.swift in Sources */,
 				B2BF824A286793980062CA4D /* Reachability.swift in Sources */,
 				25433971286729290074B5BC /* SceneDelegate.swift in Sources */,

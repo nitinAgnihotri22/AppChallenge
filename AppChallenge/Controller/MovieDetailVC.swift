@@ -31,9 +31,9 @@ class MovieDetailVC: UIViewController {
     
     func fetchMovieDetail() {
         if ConnectionManager.sharedInstance.isReachable {
-            addLoader("Fetching Details",self)
+            showLoader()
             movieDetailVM.callFuncToGetMoviewDetail(getMovieDetailUrl(movieId)) { movieDetailObj, error in
-                hideLoader(self)
+                self.removeLoader()
                 if error == nil {
                     self.titleLbl.text = movieDetailObj?.title
                     self.movieDetailObj = movieDetailObj!
@@ -44,7 +44,7 @@ class MovieDetailVC: UIViewController {
                     }
                     self.movieDetailTableView.reloadData()
                 } else {
-                    hideLoader(self)
+                    self.removeLoader()
                     AlertController.alert(target:self,title: "Error", message: error?.localizedDescription ?? "", buttons: ["Ok","Retry"]) { alert, selectedIndex in
                         if selectedIndex == 1 {
                             self.fetchMovieDetail()

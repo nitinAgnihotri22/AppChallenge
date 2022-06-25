@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         if ConnectionManager.sharedInstance.isReachable {
             if searchStr.count > 0,
                page == self.pageNo {
-                addLoader("Fetching Movies",self)
+                showLoader()
                 movieListVM.callFuncToGetMoviewList(getSearchUrl(searchStr, page)) { movies, error in
                     if error == nil,
                        let movieList = movies {
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     }
         
     private func performError(error: Error?) {
-        hideLoader(self)
+        removeLoader()
         AlertController.alert(target:self,title: "Error", message: error?.localizedDescription ?? "", buttons: ["Ok","Retry"]) { alert, selectedIndex in
             if selectedIndex == 1 {
                 self.callApiToGetMovies(self.searchText, page: self.pageNo)
@@ -176,7 +176,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
 
 extension ViewController {
     func getDataAndReload(_ movieListModel:MoviesList) {
-        hideLoader(self)
+        removeLoader()
         searchResults.append(contentsOf: movieListModel.search)
         
         if let rec = movieListModel.totalResults {
