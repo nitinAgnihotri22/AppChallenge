@@ -37,7 +37,6 @@
 		2543391C286728F90074B5BC /* AppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2543392B286728FA0074B5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2543392D286728FA0074B5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2543394F286729290074B5BC /* AppChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		25433956286729290074B5BC /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
 		25433957286729290074B5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		25433958286729290074B5BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +102,6 @@
 				25433982286729420074B5BC /* Main.storyboard */,
 				2543392A286728FA0074B5BC /* LaunchScreen.storyboard */,
 				2543392D286728FA0074B5BC /* Info.plist */,
-				2543394F286729290074B5BC /* AppChallenge-Bridging-Header.h */,
 				254339842867294E0074B5BC /* Assets.xcassets */,
 			);
 			path = AppChallenge;
@@ -436,7 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nitin.AppChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AppChallenge/AppChallenge-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nitin.AppChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AppChallenge/AppChallenge-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
